@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Aula 05 - Tabelas (Teste Dois)</title>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    </head>
+
+    <body>
+        <!--Abertura da tabela com borda de um pixel, sem espaçamento 
+        dentro dos limites da tabela, e com cinco pixels de espaçamento
+        dentro de cada célula -->
+        <table  border="1" cellspacing="0" cellpadding="5px">
+            <tr>
+                <th>L1 C1</th>
+                <!--Utilizando rowspan para dizer quantas células
+                esse <th> irá ocupar na vertical (no caso, duas células)-->
+                <th colspan="2">L1 C2</th>
+            </tr>
+            <tr>
+                <td rowspan="2">L2 C1</td>
+                <td>L2 C2</td>
+                <td>L2 C3</td>
+            </tr>
+            <tr>
+                <td>L3 C1</td>
+                <td>L3 C2</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
