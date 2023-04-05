@@ -5,7 +5,6 @@
 # valor dos salários bruto e líquido de um vendedor, exibindo estes dois valores na tela.
 
 # Definição de variáveis
-
 salariofixo = 2000
 valordasvendas = float(input('Digite o valor das vendas: R$'))
 comissao = valordasvendas * (2/100) 
