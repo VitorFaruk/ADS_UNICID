@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="logonucd"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-11 08:32:05 "/>
+        <attribute name="created" value="bG9nb251Y2Q7U1AwNS1MQUIwMy0xOTsyMDIzLTA0LTExOyIwODoxMjo1MyAiOzI4MTI="/>
+        <attribute name="edited" value="bG9nb251Y2Q7U1AwNS1MQUIwMy0xOTsyMDIzLTA0LTExOyIwODozMjowNSAiOzE7MjkxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fixo, comissao, bruto, liquido, desconto, vendas" type="Real" array="False" size=""/>
+            <input variable="vendas"/>
+            <assign variable="fixo" expression="2000"/>
+            <assign variable="comissao" expression="2/100*vendas"/>
+            <assign variable="bruto" expression="fixo+comissao"/>
+            <assign variable="desconto" expression="9/100*bruto"/>
+            <assign variable="liquido" expression="bruto-desconto"/>
+            <output expression="&quot;O valor do sal&#225;rio bruto &#233;: R$&quot;&amp; bruto" newline="True"/>
+            <output expression="&quot;O valor do sal&#225;rio l&#237;quido &#233;: R$&quot;&amp; liquido" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
