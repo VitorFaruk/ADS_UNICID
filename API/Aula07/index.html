@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Aula 07 - Formulário</title>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    </head>
+
+    <body>
+        <h1> Agendamento de Atividade-Disney World</h1>
+        <form name="formulário" action="https://google.com.br" method="get" enctype="multipart/form-data">
+            <p>RESORT: <input type="text" name="q" value="Disney World Orlando"> </p>
+            <p>SENHA: <input type="password" name="senha" maxlength="10" placeholder="Digite seu nome"></p>
+            <p>NOME DO RESPONSÁVEL: <input type="text" name="responsavel" maxlength="80" size="80" placeholder="Informe nome completo"></p>            
+            <p>N&ordm; de familiares (incluindo crianças): <input type="number" name="familiares" min="1" max="99">
+            
+                <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" value="M"checked>Masculino 
+                <input type="radio" name="sexo" value="F">Feminino
+            </fieldset>
+            <p>E-MAIL: <input type="email" name="email" maxlenght="100" size="100" required></p>
+            
+            <h3>Acesso ao Parque</h3>
+            <p>Data da visita: <input type="date" name="dataVisita" min="2019-01-01" max="2020-12-31" required></p>
+            <p>Hora de entrada: <input type="time" name="horaVisita" min="08:00:00"></p>
+            <p>Cor da Pulseira: <input type="color" name="corPulseira" value="#7F00FF"></p>
+            <p>Número de atrações a visitar: <input type="range" name="atracoes" min="1" max="10"></p>
+            <p>Foto da Família: <input type="file" name="foto"></p>
+
+            <h3>Preferência de Comida</h3>
+            <textarea name="comida" placeholder="Insira suas preferências aqui (vegano, carnívoro, etc)" rows="3" cols="80"></textarea>
+
+            <h3>Você concorda com os termos?</h3>
+            <select name="aceite">
+                <option value="s">Sim</option>
+                <option value="n">Não</option>
+            </select>
+
+            <p><input type="checkbox" name="recEmails" value="1" checked>Quero receber esse e-mail</p>
+            <input type="submit">
+            <hr/>
+            <p>PREENCHIMENTO: 1/5 <progress max="5" value="1" step="2"></progress></p>
+        </form>
+    </body>
+</html>
