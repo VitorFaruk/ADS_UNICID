@@ -1,4 +1,6 @@
 # Exercício Teste Aula 08 - Programação de Computadores
+# pip install numpy -> rodar no prompt de comando (precisa baixar o Python no PC)
+# import numpy as n
 
 import math as mt
 print("--------OPERAÇÃO -> NÚMERO---------")
