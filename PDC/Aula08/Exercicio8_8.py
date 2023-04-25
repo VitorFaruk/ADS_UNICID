@@ -6,6 +6,6 @@ contador = 0
 num = 0
 while (contador < 10):
     num += 1
-    if num%2 == 1 and (num%5 == 0 or num%7 == 0):
+    if num%2 == 1 and (num%5 == 0 and num%7 == 0):
         print(num)
         contador += 1
