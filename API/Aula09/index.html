@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> Aula 09 - CSS </title>
+        <meta http-equiv="Content/Type" content="text/html" content="UTF-8">
+        <style> 
+            body{
+                color:#0FA51E; 
+                text-align:center;
+            } 
+            h1{
+                color:#FFFFFF;
+                background-color:#000000;
+                margin: 0px; 
+                padding: 10px auto;
+                border: 0;
+                border-radius: 5px;
+                width: 150px;
+            }
+            h1:hover{
+                color:#000000;
+                background-color:#FFFFFF; 
+            }
+
+            p{
+                color: #34CFEB;
+                text-align: left;
+                font-family: calibri, arial;
+                /*Comentário em CSS*/ 
+            }
+
+            /* hover = passar o mouse em cima */
+            p:hover{
+                color:#000000;
+                background-color:#34CFEB;
+            }
+            /* Quando defino :visited, eu defino um evento */
+            a:visited{
+                color: #F203FF;
+
+            }
+
+            .textocomum{
+                color:#0008FF;
+                text-align:left;
+                font-family:Comic sans MS, calibri, arial;
+                border: 3px double #f203ff;
+                border-radius: 3px;
+                margin: 10px auto;
+                padding: 10px;
+                width:300px;
+            }
+
+            #paragrafo{
+                font-size:15px;
+                color:#0e4215;
+                border: none;
+            }
+        </style>
+    </head>
+
+    <!--CSS inline (style="color:#0FA51E;")-->
+    <body>
+        Testando o CSS
+        <p class="textocomum" id="paragrafo" style="text-align:center;"> Parágrafo 01</p>
+        <p class="textocomum"> Parágrafo 02 <a href="https://google.com.br/" target="_BLANK">Google</a></p>
+        <p class="textocomum"> Parágrafo 03</p>
+        <p class="textocomum" id="paragrafo"> Parágrafo 04</p>
+        <p class="textocomum"> Parágrafo 05</p>
+        <h1>TESTE</h1>
+    </body>
+</html>
